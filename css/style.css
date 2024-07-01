@@ -1,0 +1,151 @@
+.box{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+    color: white;
+    height: -webkit-fill-available;
+
+
+}
+
+fieldset{
+
+    border: 3px solid dodgerblue;
+}
+
+
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+
+}
+
+.inputBox{
+
+    position: relative;
+}
+
+.inputBox2 {
+    position: fixed;
+    display: flex;
+    width: -webkit-fill-available;
+    width: 86%;
+    justify-content: flex-end;
+}
+
+.inputerUser{
+
+    background: none;    
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputerUser:focus ~ .labelInput,
+.inputerUser:valid ~ .labelInput{
+
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: dodgerblue;
+
+}
+
+#data_nascimento{   
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px
+}
+
+#btn-submit{
+
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(59, 19, 204));
+    width: 100%;
+    border:none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btn-submit:hover{  
+
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(49, 20, 177));
+}
+
+
+
+
+
+
+
+.barra_rodape{
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+
+.barra_topo{
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+
+}
+
+
+
+.logo {
+    width: fit-content;
+    height: -webkit-fill-available;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+}
+
+.logo img {
+    height: -webkit-fill-available;
+}
+
+.texo_logo{
+    color:black;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(33, 78, 173) , #233d75);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+

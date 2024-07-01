@@ -1,0 +1,115 @@
+body{
+
+    background-image: linear-gradient(to right, rgb(33, 78, 173) , #233d75);
+}
+
+.curriculo_final {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 15px;
+    border-radius: 15px;
+    width: 75%;
+    color: black;
+    height: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    background-color: white;
+    
+    
+}
+
+div#curriculo_final {
+    margin-top: 48px;
+}
+
+
+
+
+
+h1 {
+    margin: 0px;
+    width: 60%;
+}
+
+h3{
+    margin: 0px;
+
+}
+
+
+p {
+    width: fit-content;
+}
+
+p#idade_nacionalidade_post {
+    margin: 0px;
+}
+
+p#endereco_completo {
+    margin: 0px;
+}
+
+
+
+
+.nome_post {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.idade_nacionalidade {
+    text-align: center;
+}
+
+.idade_nacionalidade {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+}
+
+.endereco_completo {
+    text-align: center;
+}
+
+.endereco_completo {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+}
+
+.telefone_email {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+}
+
+
+
+
+
+
+
+
+#btn-submit{
+
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(99, 68, 209));
+    width: 100%;
+    border:none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btn-submit:hover{  
+
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(49, 20, 177));
+}
+
+.botao_imprimir {
+    margin-top: -20px;
+}

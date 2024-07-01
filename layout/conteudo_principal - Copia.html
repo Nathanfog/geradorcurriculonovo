@@ -1,0 +1,120 @@
+<div class="conteudo_principal" id="conteudo_principal">
+    
+    <div class="elemento_principal">
+
+        <div class="topo_conteudo">
+            <h2>Preencha os campos para gera seu curriculo</h2>
+        </div>
+
+        <script type="text/javascript">
+
+            function duplicarexp_pro(){
+            var exp_pro = document.getElementById("exp_pro");
+            
+            var aumentar_conteudo = document.getElementById("conteudo_principal");
+            
+            
+
+            exp_pro.innerHTML +='<label for="experiencias_profissionais">Experiências Profissionais:</label><input type="text" name="experiencias_profissionais[]" required="required"></input><button type="button" onclick="duplicarexp_pro()">Adicionar +</button>'
+                
+
+            }
+
+            function duplicar_ref_pes(){
+            var ref_pes = document.getElementById("ref_pes");
+
+            ref_pes.innerHTML +='<label for="referencias_pessoais">Referências Pessoais:</label><input type="text" name="referencias_pessoais[]" required="required"></input><button type="button" onclick="duplicar_ref_pes()">Adicionar +</button>'
+
+            }
+
+            function duplicar_obj_prf(){
+            var obj_prf = document.getElementById("obj_prf");
+
+            obj_prf.innerHTML +='<label for="objetivo_profissional">Objetivo Profissional:</label><input type="text" name="objetivo_profissional[]" required="required"></input><button type="button" onclick="duplicar_obj_prf()">Adicionar +</button>'
+
+            }
+
+            function duplicar_for_acd(){
+            var for_acd = document.getElementById("for_acd");
+
+            for_acd.innerHTML +='<label for="formacao_academica">Formação Acadêmica:</label><input type="text" name="formacao_academica[]" required="required"></input><button type="button" onclick="duplicar_for_acd()">Adicionar +</button>'
+
+            }
+
+            function duplicar_for_com(){
+            var for_acd = document.getElementById("for_com");
+
+            for_com.innerHTML +='<label for="formacao_complementar">Formação Complementar:</la><input type="text" name="formacao_complementar[]" required="required"></input><button type="button" onclick="duplicar_for_com()">Adicionar +</button>'
+
+            }
+
+
+        </script>
+
+
+
+
+        <div class="formulario">
+
+            <form action="gerador.php" method="POST">
+                
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required="required" autofocus />
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required="required" />
+
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" name="data_nascimento" required="required" />
+
+                <label for="sexo">Sexo:</label>
+                    <select name="sexo" name="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+
+            <label for="idade_atual">Idade Atual:</label>
+            <input type="number" name="idade_atual" required="required" />
+
+            <div class="exp_pro" id="exp_pro">
+                <label for="experiencias_profissionais">Experiências Profissionais:</label>
+                <input type="text" name="experiencias_profissionais[]" required="required"></input>
+                <button type="button" onclick="duplicarexp_pro()">Adicionar +</button>
+            </div>
+
+            <div class="ref_pes" id="ref_pes">
+                <label for="referencias_pessoais">Referências Pessoais:</label>
+                <input type="text" name="referencias_pessoais[]" required="required"></input>
+                <button type="button" onclick="duplicar_ref_pes()">Adicionar +</button>
+            </div>
+
+            <div class="obj_prf" id="obj_prf">
+                <label for="objetivo_profissional">Objetivo Profissional:</label>
+                <input type="text" name="objetivo_profissional[]" required="required"></input>
+                <button type="button" onclick="duplicar_obj_prf()">Adicionar +</button>
+            </div>
+            
+            <div class="for_acd" id="for_acd">
+                <label for="formacao_academica">Formação Acadêmica:</label>
+                <input type="text" name="formacao_academica[]" required="required"></input>
+                <button type="button" onclick="duplicar_for_acd()">Adicionar +</button>
+            </div>
+            
+            <div class="for_com" id="for_com">
+                <label for="formacao_complementar">Formação Complementar:</la>
+                <input type="text" name="formacao_complementar[]" required="required"></input>
+                <button type="button" onclick="duplicar_for_com()">Adicionar +</button>
+            </div>
+
+            <input type="submit" value="Enviar" />
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
