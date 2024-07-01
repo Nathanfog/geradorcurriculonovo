@@ -9,3 +9,7 @@ include "layout/barra_topo.php";
 <?php
 include "layout/conteudo_principal.html";
 ?>
+
+<?php
+include "layout/rodape.php";
+?>
