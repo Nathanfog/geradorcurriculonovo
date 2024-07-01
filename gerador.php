@@ -105,7 +105,7 @@
                 echo "</div>";
                 
                 foreach($_POST['formacao_academica'] as $formacao_academica){
-                echo "<p id='objetivo_profissional'>$formacao_academica</p>";
+                echo "<p id='formacao_academica'>$formacao_academica</p>";
                 }
             }
 
@@ -115,8 +115,8 @@
                 echo "<h3 id='experiencias_profissionais_post'>Experiencias Profissionais</h1>";
                 echo "</div>";
                 
-                foreach($_POST['formacao_academica'] as $formacao_academica){
-                echo "<p id='objetivo_profissional'>$formacao_academica</p>";
+                foreach($_POST['experiencias_profissionais'] as $experiencias_profissionais){
+                echo "<p id='objetivo_profissional'>$experiencias_profissionais</p>";
                 }
             }
 
