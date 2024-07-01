@@ -127,7 +127,7 @@
                 echo "</div>";
                 
                 foreach($_POST['referencias_pessoais'] as $referencias_pessoais){
-                echo "<p id='objetivo_profissional'>$referencias_pessoais</p>";
+                echo "<p id='referencias_pessoais_post'>$referencias_pessoais</p>";
                 }
             }
 
